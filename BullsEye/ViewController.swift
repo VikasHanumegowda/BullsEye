@@ -25,7 +25,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         currentValue = lroundf(slider.value)
         startNewRound()
-        let thumbImageNormal = UIImage(named: "SliderThumb-Normal")!
+        
+        let thumbImageNormal =  UIImage(named: "SliderThumb-Normal")!
         slider.setThumbImage(thumbImageNormal, for: .normal)
         let thumbImageHighlighted = UIImage(named: "SliderThumb-Highlighted")!
         slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
