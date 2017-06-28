@@ -170,10 +170,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="c2K-hq-QZE">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                             </imageView>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujz-yl-2iU">
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cxM-6G-LPY">
                                 <rect key="frame" x="20" y="20" width="528" height="235"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yDV-md-x41">
+                                        <rect key="frame" x="0.0" y="0.0" width="528" height="235"/>
+                                        <subviews>
+                                            <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ujz-yl-2iU">
+                                                <rect key="frame" x="0.0" y="0.0" width="528" height="235"/>
+                                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </webView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlp-aJ-PNb">
                                 <rect key="frame" x="234" y="263" width="100" height="37"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
@@ -192,12 +203,8 @@
                         <constraints>
                             <constraint firstItem="c2K-hq-QZE" firstAttribute="centerY" secondItem="Ezb-hx-7tI" secondAttribute="centerY" id="Fmx-t0-dzb"/>
                             <constraint firstItem="lIh-CT-7Vy" firstAttribute="top" secondItem="hlp-aJ-PNb" secondAttribute="bottom" constant="20" id="MLx-j7-5bZ"/>
-                            <constraint firstItem="ujz-yl-2iU" firstAttribute="top" secondItem="aZw-Eg-JI1" secondAttribute="bottom" constant="20" id="MXg-2Z-6RA"/>
                             <constraint firstItem="c2K-hq-QZE" firstAttribute="centerX" secondItem="Ezb-hx-7tI" secondAttribute="centerX" id="NLL-z2-4cO"/>
-                            <constraint firstItem="hlp-aJ-PNb" firstAttribute="top" secondItem="ujz-yl-2iU" secondAttribute="bottom" constant="8" id="Sbn-qH-5gZ"/>
-                            <constraint firstAttribute="trailing" secondItem="ujz-yl-2iU" secondAttribute="trailing" constant="20" id="TBw-jN-Q7l"/>
                             <constraint firstItem="hlp-aJ-PNb" firstAttribute="centerX" secondItem="Ezb-hx-7tI" secondAttribute="centerX" id="ekH-Yc-kHU"/>
-                            <constraint firstItem="ujz-yl-2iU" firstAttribute="leading" secondItem="Ezb-hx-7tI" secondAttribute="leading" constant="20" id="xrf-hZ-CHc"/>
                         </constraints>
                     </view>
                     <connections>
